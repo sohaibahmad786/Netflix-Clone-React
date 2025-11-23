@@ -1,0 +1,319 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: black;
+    color: white;
+}
+body::-webkit-scrollbar{
+    display: none;
+}
+
+/* ---------------- TOP IMAGE ---------------- */
+.Top_image{
+    background-image: url('https://wallpapers.com/images/hd/the-walking-dead-1920-x-1080-background-fecbqn17qw4n3ayu.jpg');
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+.para{
+    margin-top: -100px;
+    position: absolute;
+    color: rgb(26, 24, 24);
+    text-align: center;
+    max-width: 550px;
+}
+.para p{
+    font-size: 20px;
+}
+.btn{
+    display: flex;
+    gap: 20px;
+}
+
+.play_btn{
+    display: flex;
+    align-items: center;
+    background-color: rgb(217, 36, 36);
+    padding: 6px 12px;
+    gap: 10px;
+    border-radius: 7px;
+    cursor: pointer;
+}
+.list_btn{
+    display: flex;
+    align-items: center;
+    background-color: rgb(23, 22, 22);
+    padding: 7px 12px;
+    border-radius: 7px;
+    gap: 10px;
+    cursor: pointer;
+}
+
+/* ---------------- TRENDING SCROLLER ---------------- */
+.trending{
+    margin-top: 15px;
+    margin-left: 30px;
+}
+
+/* image scrolling */
+.carousel-wrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin: 16px 0;
+}
+.carousel {
+  display: flex;
+  gap: 12px;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  padding: 12px;
+  scrollbar-width: none;
+}
+.carousel::-webkit-scrollbar { display: none; }
+
+.card {
+  min-width: 200px;
+  height: 120px;
+  flex: 0 0 auto;
+  border-radius: 8px;
+  overflow: hidden;
+}
+.card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.carousel-btn {
+  background: rgba(0,0,0,0.6);
+  color: white;
+  border: none;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+/* ---------------- MOVIES SECTION ---------------- */
+.Movies{
+    display: flex;
+    gap: 15px;
+    align-items: center;
+    margin-top: 20px;
+    margin-left: 30px;
+}
+.Movies p{
+    font-size: 20px;
+}
+.movie_pics{
+    margin-top: 20px;
+    text-align: center;
+}
+.first_row{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;   /* responsive */
+    gap: 20px;
+}
+.first_row img{
+    height: 250px;
+    width: 200px;
+    border-radius: 10px;
+    object-fit: cover;
+}
+.first_row button{
+    margin-top: 5px;
+    padding: 4px 10px;
+    background-color: red;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+/* ---------------- MID PIC ---------------- */
+.mid_pic {
+   background-image: url('https://sm.ign.com/t/ign_pk/feature/t/the-25-bes/the-25-best-action-movies-of-all-time_rrs7.1280.jpg');
+   background-size: cover;
+   background-position: center;
+   height: 65vh;
+   width: 95%;
+   border-radius: 10px;
+   margin: 20px auto;
+   position: relative;
+}
+.mid_pic::before{
+    content: "";
+    inset: 0;
+    background: rgba(0, 0, 0, 0.5);
+    position: absolute;
+}
+.mid_pic h1{
+    position: absolute;
+    top: 25%;
+    left: 5%;
+    font-size: 40px;
+}
+.mid_pic .discription{
+    position: absolute;
+    top: 43%;
+    left: 5%;
+    font-size: 16px;
+}
+.mid_pic .btn{
+    position: absolute;
+    top: 62%;
+    left: 5%;
+}
+
+/* ---------------- FOOTER ---------------- */
+.last{
+    color: white;
+    width: 100%;
+    padding-bottom: 40px;
+}
+.top_text{
+    text-align: center;
+    padding-top: 30px;
+}
+.top_text button{
+    background-color: red;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    padding: 7px 30px;
+    font-size: 18px;
+    font-weight: 600;
+}
+.contact p{
+    margin-top: 30px;
+    margin-left: 130px;
+    font-size: 20px;
+}
+.Text_head{
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 20px;
+    flex-wrap: wrap;
+    gap: 25px;
+}
+.column p{
+    margin-top: 10px;
+    font-size: 17px;
+}
+
+.select_box {
+  position: relative;
+  width: 150px;
+  margin-left: 130px;
+  margin-top: 20px;
+}
+.select_box select {
+  width: 100%;
+  padding: 8px 10px 8px 18px;
+  border-radius: 5px;
+  border: 1px solid #aaa;
+}
+.bottom_text{
+    margin-left: 130px;
+    margin-top: 20px;
+    font-size: 20px;
+}
+
+/* ===================================================
+    RESPONSIVE MEDIA QUERIES  
+=================================================== */
+
+/* ------- Tablets (900px below) ------- */
+@media (max-width: 900px){
+    .para p { font-size: 16px; }
+
+    .mid_pic h1{
+        font-size: 28px;
+    }
+    .mid_pic .discription{
+        font-size: 14px;
+    }
+
+    .top_text p,
+    .contact p,
+    .bottom_text {
+        margin-left: 30px;
+    }
+    .select_box { margin-left: 30px; }
+}
+
+/* ------- Mobiles (600px below) ------- */
+@media (max-width: 600px){
+
+    .Top_image{
+        height: 60vh;
+    }
+    .para{
+        padding: 0 15px;
+        max-width: 370px;
+        
+    }
+    .para p{
+        font-size: 15px;
+        margin-top: 18px;
+        height: 8px;
+    }
+    .btn{
+        flex-direction: column;
+        gap: 10px;
+        margin-top: 85px;
+    }
+    .play_btn{
+        /* text-align: center; */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 130px;
+        margin: auto;
+    }
+    .list_btn{
+        margin-top: 5px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 130px;
+        margin: auto;
+    }
+
+    .mid_pic{
+        height: 50vh;
+    }
+    .mid_pic h1{
+        font-size: 22px;
+        top: 18%;
+    }
+    .mid_pic .discription{
+        top: 35%;
+        font-size: 13px;
+        width: 90%;
+    }
+    .mid_pic .btn{
+        top: 55%;
+        flex-direction: column;
+    }
+
+    .first_row img{
+        width: 150px;
+        height: 200px;
+    }
+
+    .contact p,
+    .bottom_text,
+    .select_box{
+        margin-left: 20px;
+    }
+}

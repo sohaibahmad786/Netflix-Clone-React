@@ -1,0 +1,119 @@
+*{
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+}
+
+/* Background */
+.data_container{
+    background-image: url('https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/f562aaf4-5dbb-4603-a32b-6ef6c2230136/dh0w8qv-9d8ee6b2-b41a-4681-ab9b-8a227560dc75.jpg/v1/fill/w_1192,h_670,q_70,strp/the_netflix_login_background__canada__2024___by_logofeveryt_dh0w8qv-pre.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9NzIwIiwicGF0aCI6Ii9mL2Y1NjJhYWY0LTVkYmItNDYwMy1hMzJiLTZlZjZjMjIzMDEzNi9kaDB3OHF2LTlkOGVlNmIyLWI0MWEtNDY4MS1hYjliLThhMjI3NTYwZGM3NS5qcGciLCJ3aWR0aCI6Ijw9MTI4MCJ9XV0sImF1ZCI6WyJ1cm46c2VydmljZTppbWFnZS5vcGVyYXRpb25zIl19.FScrpAAFnKqBVKwe2syeiOww6mfH6avq-DRHZ_uFVNw');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    width: 100%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.data_container::before{
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0,0,0,0.5);
+    backdrop-filter: blur(5px);
+    z-index: 0;
+}
+
+/* Form Box */
+.input_container{
+    position: relative;
+    z-index: 1;
+    background-color: red;
+    color: white;
+    height: auto;
+    width: 350px;
+    padding: 25px 20px;
+    border-radius: 15px;
+}
+
+/* Heading */
+h1{
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+/* Inputs */
+.input_container div{
+    margin-top: 12px;
+}
+
+.input_container input{
+    padding: 10px;
+    width: 100%;
+    border: none;
+    font-size: 16px;
+    border-radius: 10px;
+}
+
+p{
+    font-size: 18px;
+}
+
+/* Button Center */
+.btn{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.btn button{
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: white;
+    color: red;
+    margin-top: 15px;
+    font-weight: bold;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.btn button:active{
+    background-color: red;
+    color: white;
+    border: 2px solid white;
+}
+
+/* ---------------------- */
+/* RESPONSIVENESS */
+/* ---------------------- */
+
+@media (max-width: 480px){
+    .input_container{
+        width: 85%;
+        padding: 20px;
+    }
+
+    p{
+        font-size: 16px;
+    }
+
+    .input_container input{
+        font-size: 14px;
+        padding: 8px;
+    }
+
+    .btn button{
+        font-size: 14px;
+        padding: 8px 16px;
+    }
+}
+
+@media (max-width: 768px){
+    .input_container{
+        width: 80%;
+    }
+}
+
